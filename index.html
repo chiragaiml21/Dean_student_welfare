@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
+      </style>
+    <title>GLA Student Welfare</title>
+</head>
+<body>
+    <div class="container">
+
+<!-- ------------------------Navbar-------------------------------- -->
+        <div class="sidebar">
+            <div class="logo">
+                <span id="name"><h2>GLA</h2><h5>Welfare</h5></span>
+            </div>
+            <div class="menu_btn">
+                <span class="material-symbols-outlined" id="btn">
+                    menu
+                </span>
+                <span class="material-symbols-outlined" id="btn_close">
+                    close
+                </span>
+            </div>
+            <div class="menu_items">
+                <ul class="nav_list">
+                    <!-- <li>
+                        <div class="search">
+                            <span class="material-symbols-outlined" id="search">search</span>
+                            <input type="search" placeholder="Search...">
+                        </div>
+                    </li> -->
+                    <li>
+                        <a href="https://www.gla.ac.in/">
+                            <span id="logo_home">
+                                <img src="images/GLA_University_logo.png" id="logo_home_img"> 
+                             </span>
+                            
+                                <span class="links_name">Home</span>
+                        </a>
+                        <span class="tooltip">Home</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span><i class="fa-solid fa-building-columns"></i></span>
+                                <span class="links_name">About</span>
+                        </a>
+                        <span class="tooltip">About</span>
+                    </li>
+                    <li>
+                        <a href="#" onclick="toggleTab('tab1')" id="tab1">
+                            <span class="material-symbols-outlined">
+                                groups
+                                </span>
+                                <span class="links_name">Student's Council</span>
+                        </a>
+                        <span class="tooltip">Council</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="material-symbols-outlined">
+                                campaign
+                                </span>
+                                <span class="links_name">Activities</span>
+                        </a>
+                        <span class="tooltip">Activities</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="material-symbols-outlined">security</span>
+                                <span class="links_name">NSS</span>
+                        </a>
+                        <span class="tooltip">NSS</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="material-symbols-outlined">
+                                local_police
+                                </span>
+                                <span class="links_name">NCC</span>
+                        </a>
+                        <span class="tooltip">NCC</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="material-symbols-outlined">
+                                sports_esports
+                                </span>
+                                <span class="links_name">Sports & Games</span>
+                        </a>
+                        <span class="tooltip">Sports & Games</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="material-symbols-outlined">
+                                hotel_class
+                                </span>
+                                <span class="links_name">Achievements</span>
+                        </a>
+                        <span class="tooltip">Achievements</span>
+                    </li>
+                </ul>  
+            </div>
+        </div>
+
+
+        <div class="home_content">
+            <div class="navbar">
+                <!-- <div class="search">
+                    <span class="material-symbols-outlined" id="search">search</span>
+                    <input type="search" placeholder="Search...">
+                </div> -->
+                <div class="gla">
+                    <a href="https://www.gla.ac.in/" class="gla_logo"><img src="images/logo.png"></a>
+                </div>
+            </div>
+
+
+<!-- -------Student Life---------- -->
+            <div id="student-life">
+                <div class="about_img">
+                    <img src="images/gla.jpg" class="overview_image">
+                    <h1>Student Life</h1>
+                </div>
+                <div class="info">
+                    <div class="heading">
+                        <h2>Heading</h2>
+                    </div>
+                    <div class="para">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim commodi, tempore, quo facilis dolorem temporibus vel suscipit nisi eveniet animi, reiciendis asperiores? Sint doloremque maiores dolorum fuga ipsam officia in.</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="heading">
+                        <h2>Heading</h2>
+                    </div>
+                    <div class="para">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim commodi, tempore, quo facilis dolorem temporibus vel suscipit nisi eveniet animi, reiciendis asperiores? Sint doloremque maiores dolorum fuga ipsam officia in.</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="heading">
+                        <h2>Heading</h2>
+                    </div>
+                    <div class="para">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim commodi, tempore, quo facilis dolorem temporibus vel suscipit nisi eveniet animi, reiciendis asperiores? Sint doloremque maiores dolorum fuga ipsam officia in.</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="heading">
+                        <h2>Heading</h2>
+                    </div>
+                    <div class="para">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim commodi, tempore, quo facilis dolorem temporibus vel suscipit nisi eveniet animi, reiciendis asperiores? Sint doloremque maiores dolorum fuga ipsam officia in.</p>
+                    </div>
+                </div>
+                <div class="space"></div>
+            </div>
+        </div>
+
+    <div class="tab-content" id="content1">
+        
+    </div>
+           <script src="https://kit.fontawesome.com/ac1aec28f7.js" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>
