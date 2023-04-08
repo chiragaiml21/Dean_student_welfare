@@ -28,12 +28,7 @@
             </div>
             <div class="menu_items">
                 <ul class="nav_list">
-                    <!-- <li>
-                        <div class="search">
-                            <span class="material-symbols-outlined" id="search">search</span>
-                            <input type="search" placeholder="Search...">
-                        </div>
-                    </li> -->
+                    
                     <li>
                         <a href="https://www.gla.ac.in/">
                             <span id="logo_home">
@@ -45,14 +40,14 @@
                         <span class="tooltip">Home</span>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#" onclick="toggleTab('tab1')" id="tab1">
                             <span><i class="fa-solid fa-building-columns"></i></span>
                                 <span class="links_name">About</span>
                         </a>
                         <span class="tooltip">About</span>
                     </li>
                     <li>
-                        <a href="#" onclick="toggleTab('tab1')" id="tab1">
+                        <a href="#" onclick="toggleTab('tab2')" id="tab2">
                             <span class="material-symbols-outlined">
                                 groups
                                 </span>
@@ -61,7 +56,7 @@
                         <span class="tooltip">Council</span>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#" onclick="toggleTab('tab3')" id="tab3">
                             <span class="material-symbols-outlined">
                                 campaign
                                 </span>
@@ -70,14 +65,14 @@
                         <span class="tooltip">Activities</span>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#" onclick="toggleTab('tab4')" id="tab4">
                             <span class="material-symbols-outlined">security</span>
                                 <span class="links_name">NSS</span>
                         </a>
                         <span class="tooltip">NSS</span>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#" onclick="toggleTab('tab5')" id="tab5">
                             <span class="material-symbols-outlined">
                                 local_police
                                 </span>
@@ -86,7 +81,7 @@
                         <span class="tooltip">NCC</span>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#" onclick="toggleTab('tab6')" id="tab6">
                             <span class="material-symbols-outlined">
                                 sports_esports
                                 </span>
@@ -95,7 +90,7 @@
                         <span class="tooltip">Sports & Games</span>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#" onclick="toggleTab('tab7')" id="tab7">
                             <span class="material-symbols-outlined">
                                 hotel_class
                                 </span>
@@ -108,12 +103,23 @@
         </div>
 
 
+<!-- --------------Home Content---------------- -->
+
+
         <div class="home_content">
             <div class="navbar">
-                <!-- <div class="search">
-                    <span class="material-symbols-outlined" id="search">search</span>
-                    <input type="search" placeholder="Search...">
-                </div> -->
+                <div class="page">
+                    <div class="page_info">
+                        <p>Students' Welfare</p>
+                    </div>
+                    <div class="page_info"><span class="material-symbols-outlined">
+                        arrow_forward_ios
+                        </span></div>
+                    <div class="page_info">
+                        <p>About</p>
+                    </div>
+                </div>
+                
                 <div class="gla">
                     <a href="https://www.gla.ac.in/" class="gla_logo"><img src="images/logo.png"></a>
                 </div>
@@ -124,7 +130,7 @@
             <div id="student-life">
                 <div class="about_img">
                     <img src="images/gla.jpg" class="overview_image">
-                    <h1>Student Life</h1>
+                    <div class="overlay"><h1>Students' Life</h1></div>
                 </div>
                 <div class="info">
                     <div class="heading">
@@ -162,7 +168,37 @@
             </div>
         </div>
 
-    <div class="tab-content" id="content1">
+<!-- ----------------Tab Content----------------- -->
+
+        <div class="tab-content" id="content1">
+            <iframe src="pages/council.html">
+            </iframe>
+        </div>
+
+        <div class="tab-content" id="content2">
+            <iframe src="pages/council.html">
+            </iframe>
+        </div>
+        <div class="tab-content" id="content3">
+            <iframe src="pages/council.html">
+            </iframe>
+        </div>
+        <div class="tab-content" id="content4">
+            <iframe src="pages/council.html">
+            </iframe>
+        </div>
+        <div class="tab-content" id="content5">
+            <iframe src="pages/council.html">
+            </iframe>
+        </div>
+        <div class="tab-content" id="content6">
+            <iframe src="pages/council.html">
+            </iframe>
+        </div>
+        <div class="tab-content" id="content7">
+            <iframe src="pages/council.html">
+            </iframe>
+        </div>
         
     </div>
            <script src="https://kit.fontawesome.com/ac1aec28f7.js" crossorigin="anonymous"></script>
