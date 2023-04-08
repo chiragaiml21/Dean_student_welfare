@@ -202,6 +202,7 @@ body{
     width: calc(100%-78px);
     position: absolute;
     opacity: 0;
+    border-radius: 15px;
 }
 .tab-content.active{
     position: fixed;
@@ -211,7 +212,7 @@ body{
     margin: 0 auto;
     left:97px;
     top: 10px;
-    box-shadow:  0px 5px 8px 0 rgba(0, 0, 0, 0.4), 0 8px 20px 0 rgba(0, 0, 0, 0.4);
+    box-shadow:  0px 8px 30px 1px rgba(0, 0, 0, 1), 0 8px 20px 5px rgba(0, 0, 0, 1);
     padding: 10px;
     border-radius: px;
     background-color: #f2f2f2;
@@ -281,8 +282,8 @@ html{
     width: 100%;
     height: 30rem;
     margin-top: 8%;
-    
-}
+    }
+
 #student-life .overlay{
     position: absolute;
     top:8%;
@@ -329,12 +330,36 @@ html{
 .tab-content iframe{
     width: 100%;
     height: 100%;
+    border-radius: 15px;
+    /* border: 1px solid black; */
 }
 
 
 /* ---------------------------------------------- */
 
+/* ----------------------------------Login Section------------------------------- */
 
+.sidebar .login_btn{
+    opacity: 0;
+}
+.sidebar.active .login_btn{
+    transition: all 0.2s ease;
+    position: absolute;
+    bottom: 10px;
+    left: 25%;
+    opacity: 1;
+    background-color: #4CAF50;
+    border-radius: 7px; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
 
 @media only screen and (max-width: 576px) {
     .tab-content.active{
