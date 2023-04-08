@@ -251,11 +251,12 @@ html{
 }
 .navbar .page{
     display: flex;
-    background: linear-gradient(to right,#11101d,rgba(0, 0, 0, 0));
+    background: #11101d;
     position: absolute;
     margin-top: 1.5rem;
-    width: 90%;
+    width: 88%;
     height: 5%;
+    padding-left: 3%;
 }
 .navbar .page .page_info{
     padding: 10px;
