@@ -9,6 +9,10 @@
         @import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
       </style>
     <title>GLA Student Welfare</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="shortcut icon" href="images/GLA_University_logo.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="images/GLA_University_logo.png">
 </head>
 <body>
     <div class="container">
@@ -90,7 +94,7 @@
                         <span class="tooltip">Sports & Games</span>
                     </li> -->
                     <li>
-                        <a href="#" onclick="toggleTab('tab1')" id="tab1">
+                        <a href="#" onclick="toggleTab('tab7')" id="tab7">
                             <span class="material-symbols-outlined">
                                 hotel_class
                                 </span>
@@ -102,23 +106,44 @@
                         
                             <div class="dropdown">
                               <a href="#" onclick="view()" id="d_eff">
-                                <span><i class="fa-solid fa-graduation-cap"></i></span>
+                                <span id="campus_eff"><i class="fa-solid fa-graduation-cap"></i></span>
                                 <span class="links_name" id="d_btn">Campus Life</span>
                                 <span class="material-symbols-outlined" id="arrow">
                                     arrow_right
                                     </span>
                               </a>
+                              <!-- <span class="tooltip">Campus Life</span> -->
+                              
                               <div class="dropdown_content" id="d_cont">
-                                <a href="#" onclick="toggleTab('tab2')" id="tab2" class="sub-division"><span>Student Council</span></a>
-                                <a href="#" onclick="toggleTab('tab3')" id="tab3" class="sub-division"><span>Activities</span></a>
-                                <a href="#" onclick="toggleTab('tab4')" id="tab4" class="sub-division"><span>NSS</span></a>
-                                <a href="#" onclick="toggleTab('tab5')" id="tab5" class="sub-division"><span>NCC</span></a>
-                                <a href="#" onclick="toggleTab('tab6')" id="tab6" class="sub-division"><span>Sports & Games</span></a>
+                                <a href="#" onclick="toggleTab('tab2'), view()" id="tab2" class="sub-division"><span>Student Council</span></a>
+                                <a href="#" onclick="toggleTab('tab3'), view()" id="tab3" class="sub-division"><span>Activities</span></a>
+                                <a href="#" onclick="toggleTab('tab4'), view()" id="tab4" class="sub-division"><span>NSS</span></a>
+                                <a href="#" onclick="toggleTab('tab5'), view()" id="tab5" class="sub-division"><span>NCC</span></a>
+                                <a href="#" onclick="toggleTab('tab6'), view()" id="tab6" class="sub-division"><span>Sports & Games</span></a>
                               </div>
                             </div>
                           
-                          
                     </li>
+
+                    <li>
+                        <a href="#" onclick="toggleTab('tab8')" id="tab8" class="griv">
+                            <span class="material-symbols-outlined">
+                                mail
+                                </span>
+                                <span class="links_name">Grivance</span>
+                        </a>
+                        <span class="tooltip">Grivance</span>
+                    </li> 
+
+                    <li>
+                        <a href="#" onclick="toggleTab('tab9')" id="tab9" class="eve">
+                            <span class="material-symbols-outlined">
+                                campaign
+                                </span>
+                                <span class="links_name">Events</span>
+                        </a>
+                        <span class="tooltip">Events</span>
+                    </li> 
                 </ul> 
                 <div class="login">
                     <button type="Login" class="login_btn" onclick="window.location.href='login/Login.html';">Login</button>
@@ -135,28 +160,8 @@
 
 
         <div class="home_content">
-            <div class="navbar">
-                <div class="page">
-                    <div class="page_info">
-                        <p>Students' Welfare</p>
-                    </div>
-                    <div class="page_info"><span class="material-symbols-outlined">
-                        arrow_forward_ios
-                        </span></div>
-                    <div class="page_info">
-                        <p>Overview</p>
-                    </div>
-                    <div class="new_btn">
-                        <div class="grivance"><button class="g_btn">Grivance</button></div>
-                        <div class="events">
-                            <button class="g_btn">Events</button>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="gla">
-                    <a href="https://www.gla.ac.in/" class="gla_logo"><img src="images/logo.png"></a>
-                </div>
+            <div class="gla">
+                <a href="https://www.gla.ac.in/" class="gla_logo"><img src="images/logo.png"></a>
             </div>
 
 
@@ -164,8 +169,25 @@
             <div id="student-life">
                 <div class="about_img">
                     <img src="images/gla.jpg" class="overview_image">
-                    <div class="overlay"><h1>Students' Life</h1></div>
                 </div>
+                <div class="overlay"><h1>Students' Life</h1></div>
+
+
+                <div class="navbar">
+                    <div class="page">
+                        <div class="page_info">
+                            <p>Students' Welfare</p>
+                        </div>
+                        <div class="page_info"><span class="material-symbols-outlined">
+                            arrow_forward_ios
+                            </span></div>
+                        <div class="page_info">
+                            <p>Overview</p>
+                        </div>
+                    </div>
+                </div>
+
+
                 <div class="info">
                     <div class="heading">
                         <h2>Heading</h2>
@@ -204,35 +226,53 @@
 
 <!-- ----------------Tab Content----------------- -->
 
-        <!-- <div class="tab-content" id="content1">
-            <iframe src="pages/council.html">
+        <div class="tab-content" id="content1">
+            <span class="close_icon"><i class="fa-solid fa-circle-xmark"></i></span>
+            <iframe src="">
             </iframe>
-        </div> -->
-
+        </div>
+        
         <div class="tab-content" id="content2">
+            <span class="close_icon"><i class="fa-solid fa-circle-xmark"></i></span>
             <iframe src="pages/council.html" loading="lazy">
             </iframe>
         </div>
         <div class="tab-content" id="content3">
+            <span class="close_icon"><i class="fa-solid fa-circle-xmark"></i></span>
             <iframe src="" loading="lazy">
             </iframe>
         </div>
         <div class="tab-content" id="content4">
+            <span class="close_icon"><i class="fa-solid fa-circle-xmark"></i></span>
             <iframe src="" loading="lazy">
             </iframe>
         </div>
         <div class="tab-content" id="content5">
+            <span class="close_icon"><i class="fa-solid fa-circle-xmark"></i></span>
             <iframe src="" loading="lazy">
             </iframe>
         </div>
         <div class="tab-content" id="content6">
+            <span class="close_icon"><i class="fa-solid fa-circle-xmark"></i></span>
             <iframe src="pages/sports.html" loading="lazy">
             </iframe>
         </div>
         <div class="tab-content" id="content7">
-            <iframe src="" loading="lazy">
+            <span class="close_icon"><i class="fa-solid fa-circle-xmark"></i></span>
+            <iframe src="pages/achievements.html" loading="lazy">
             </iframe>
         </div>
+        <div class="tab-content" id="content8">
+            <span class="close_icon"><i class="fa-solid fa-circle-xmark"></i></span>
+            <iframe src="pages/complaints.html" loading="lazy">
+            </iframe>
+        </div>
+        <div class="tab-content" id="content9">
+            <span class="close_icon"><i class="fa-solid fa-circle-xmark"></i></span>
+            <iframe src="pages/events.html" loading="lazy">
+            </iframe>
+        </div>
+        
         
     </div>
            <script src="https://kit.fontawesome.com/ac1aec28f7.js" crossorigin="anonymous"></script>

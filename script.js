@@ -17,23 +17,24 @@ function toggleTab(tabId) {
     var allContents = document.querySelectorAll(".content");
     
     // Add a click event listener to the document
-    document.addEventListener("click", function(event) {
-      // Check if the target element is the current tab or its content
-      if (event.target !== tab && event.target !== content) {
-        // If it's not, hide the currently active tab and its content
-        for (var i = 0; i < allTabs.length; i++) {
-          if (allTabs[i].classList.contains("active")) {
-            allTabs[i].classList.remove("active");
-            allContents[i].classList.remove("active");
-          }
-        }
-      }
-    });
+    // document.addEventListener("click", function(event) {
+    //   // Check if the target element is the current tab or its content
+    //   if (event.target !== tab && event.target !== content) {
+    //     // If it's not, hide the currently active tab and its content
+    //     for (var i = 0; i < allTabs.length; i++) {
+    //       if (allTabs[i].classList.contains("active")) {
+    //         allTabs[i].classList.remove("active");
+    //         allContents[i].classList.remove("active");
+    //       }
+    //     }
+    //   }
+    // });
     
     // Toggle the current tab and its content
     tab.classList.toggle("active");
     content.classList.toggle("active");
-    view();
+
+    
   }
   
 
