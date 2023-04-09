@@ -42,11 +42,11 @@
                     <li>
                         <a href="#">
                             <span><i class="fa-solid fa-building-columns"></i></span>
-                                <span class="links_name">About</span>
+                                <span class="links_name">Overview</span>
                         </a>
-                        <span class="tooltip">About</span>
+                        <span class="tooltip">Overview</span>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a href="#" onclick="toggleTab('tab2')" id="tab2">
                             <span class="material-symbols-outlined">
                                 groups
@@ -60,11 +60,11 @@
                             <span class="material-symbols-outlined">
                                 campaign
                                 </span>
-                                <span class="links_name">Activities</span>
+                                <span class="links_name">Events</span>
                         </a>
-                        <span class="tooltip">Activities</span>
-                    </li>
-                    <li>
+                        <span class="tooltip">Events</span>
+                    </li> -->
+                    <!-- <li>
                         <a href="#" onclick="toggleTab('tab4')" id="tab4">
                             <span class="material-symbols-outlined">security</span>
                                 <span class="links_name">NSS</span>
@@ -88,23 +88,48 @@
                                 <span class="links_name">Sports & Games</span>
                         </a>
                         <span class="tooltip">Sports & Games</span>
-                    </li>
+                    </li> -->
                     <li>
-                        <a href="#" onclick="toggleTab('tab7')" id="tab7">
+                        <a href="#" onclick="toggleTab('tab1')" id="tab1">
                             <span class="material-symbols-outlined">
                                 hotel_class
                                 </span>
                                 <span class="links_name">Achievements</span>
                         </a>
                         <span class="tooltip">Achievements</span>
+                    </li> 
+                    <li>
+                        
+                            <div class="dropdown">
+                              <a href="#" onclick="view()" id="d_eff">
+                                <span><i class="fa-solid fa-graduation-cap"></i></span>
+                                <span class="links_name" id="d_btn">Campus Life</span>
+                                <span class="material-symbols-outlined" id="arrow">
+                                    arrow_right
+                                    </span>
+                              </a>
+                              <div class="dropdown_content" id="d_cont">
+                                <a href="#" onclick="toggleTab('tab2')" id="tab2" class="sub-division"><span>Student Council</span></a>
+                                <a href="#" onclick="toggleTab('tab3')" id="tab3" class="sub-division"><span>Activities</span></a>
+                                <a href="#" onclick="toggleTab('tab4')" id="tab4" class="sub-division"><span>NSS</span></a>
+                                <a href="#" onclick="toggleTab('tab5')" id="tab5" class="sub-division"><span>NCC</span></a>
+                                <a href="#" onclick="toggleTab('tab6')" id="tab6" class="sub-division"><span>Sports & Games</span></a>
+                              </div>
+                            </div>
+                          
+                          
                     </li>
                 </ul> 
                 <div class="login">
-                    <button href="#" type="Login" class="login_btn" >Login</button>
+                    <button type="Login" class="login_btn" onclick="window.location.href='login/Login.html';">Login</button>
+                        <span class="material-symbols-outlined" id="login_logo" onclick="window.location.href='login/Login.html';">
+                            login
+                        </span>
+                    <p class="login_pop">Login</p>
                 </div> 
             </div>
         </div>
-
+       
 
 <!-- --------------Home Content---------------- -->
 
@@ -119,7 +144,13 @@
                         arrow_forward_ios
                         </span></div>
                     <div class="page_info">
-                        <p>About</p>
+                        <p>Overview</p>
+                    </div>
+                    <div class="new_btn">
+                        <div class="grivance"><button class="g_btn">Grivance</button></div>
+                        <div class="events">
+                            <button class="g_btn">Events</button>
+                        </div>
                     </div>
                 </div>
                 
@@ -179,27 +210,27 @@
         </div> -->
 
         <div class="tab-content" id="content2">
-            <iframe src="pages/council.html" >
+            <iframe src="pages/council.html" loading="lazy">
             </iframe>
         </div>
         <div class="tab-content" id="content3">
-            <iframe src="pages/sports.html">
+            <iframe src="" loading="lazy">
             </iframe>
         </div>
         <div class="tab-content" id="content4">
-            <iframe src="pages/council.html">
+            <iframe src="" loading="lazy">
             </iframe>
         </div>
         <div class="tab-content" id="content5">
-            <iframe src="pages/council.html">
+            <iframe src="" loading="lazy">
             </iframe>
         </div>
         <div class="tab-content" id="content6">
-            <iframe src="pages/sports.html">
+            <iframe src="pages/sports.html" loading="lazy">
             </iframe>
         </div>
         <div class="tab-content" id="content7">
-            <iframe src="pages/council.html">
+            <iframe src="" loading="lazy">
             </iframe>
         </div>
         
