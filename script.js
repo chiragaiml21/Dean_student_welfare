@@ -11,32 +11,13 @@ btn.onclick= function(){
 function toggleTab(tabId) {
     var tab = document.getElementById(tabId);
     var content = document.getElementById("content" + tabId.slice(3));
-    
-    // Get references to all the tabs and contents
-    var allTabs = document.querySelectorAll(".tab");
-    var allContents = document.querySelectorAll(".content");
-    
-    // Add a click event listener to the document
-    // document.addEventListener("click", function(event) {
-    //   // Check if the target element is the current tab or its content
-    //   if (event.target !== tab && event.target !== content) {
-    //     // If it's not, hide the currently active tab and its content
-    //     for (var i = 0; i < allTabs.length; i++) {
-    //       if (allTabs[i].classList.contains("active")) {
-    //         allTabs[i].classList.remove("active");
-    //         allContents[i].classList.remove("active");
-    //       }
-    //     }
-    //   }
-    // });
-    
-    // Toggle the current tab and its content
+
     tab.classList.toggle("active");
     content.classList.toggle("active");
 
-    
   }
-  
+
+
 
 
 
@@ -56,13 +37,46 @@ window.addEventListener("click", function(event) {
 // -----------------------dropdown------------------------
 
 function view(){
-    if(document.getElementById("d_cont").style.display==="block"){
-        document.getElementById("d_cont").style.display="none";
-        
-    }
-
-    else{
-        document.getElementById("d_cont").style.display="block";
-
-    }
+  if(document.getElementById("d_cont").style.display==="block"){
+    document.getElementById("d_cont").style.display="none";
+    
+  }
+  
+  else{
+    document.getElementById("d_cont").style.display="block";
+    
+  }
 }
+
+
+
+
+
+
+  // -----------------------dropdown------------------------
+
+
+
+  // JavaScript code to switch images every 5 seconds and loop back to the beginning
+  let currentImageIndex = 0;
+  const carouselImages = document.querySelectorAll('.carousel-image');
+  const numImages = carouselImages.length;
+  setInterval(() => {
+      carouselImages[currentImageIndex].classList.remove('active');
+      currentImageIndex = (currentImageIndex + 1) % numImages;
+      carouselImages[currentImageIndex].classList.add('active');
+      const transformValue = `translateX(-${currentImageIndex * 100}%)`;
+      document.querySelector('.carousel-image-wrapper').style.transform = transformValue;
+      // Check if we have reached the end and loop back to the beginning
+      if (currentImageIndex === 0) {
+          for (let i = 0; i < numImages; i++) {
+              carouselImages[i].classList.remove('active');
+          }
+          carouselImages[0].classList.add('active');
+          document.querySelector('.carousel-image-wrapper').style.transform = 'translateX(0)';
+          currentImageIndex = 0;
+      }
+  }, 4000);
+
+
+

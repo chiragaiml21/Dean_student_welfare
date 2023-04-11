@@ -18,5 +18,11 @@ btn.onclick= function(){
     sidebar.classList.toggle("active");
 }
 
-
+let currentImageIndex = 0;
+  const carouselImages = document.querySelectorAll('#image-carousel img');
+  setInterval(() => {
+    carouselImages[currentImageIndex].classList.remove('active');
+    currentImageIndex = (currentImageIndex + 1) % carouselImages.length;
+    carouselImages[currentImageIndex].classList.add('active');
+  }, 4000);
 

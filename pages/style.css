@@ -199,7 +199,26 @@ body{
     left: 240px;
 }
 
-
+/* --------------------Imaghe Crousal------------------------ */
+#image-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  #image-carousel img {
+    height: 100%;
+    width: auto;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+  }
+  
+  #image-carousel img.active {
+    opacity: 1;
+  }
 
 
 /* --------------------Student_life------------------------ */
