@@ -21,16 +21,16 @@ function toggleTab(tabId) {
 
 
 
-// const divToHide = document.getElementById("d_content");
+const divToHide = document.getElementById("d_content");
 
-// // add an event listener to the window object
-// window.addEventListener("click", function(event) {
-//   // check if the clicked element is inside the div to hide
-//   if (!divToHide.contains(event.target)) {
-//     // if clicked outside, hide the div
-//     divToHide.style.display = "none";
-//   }
-// });
+// add an event listener to the window object
+window.addEventListener("click", function(event) {
+  // check if the clicked element is inside the div to hide
+  if (!divToHide.contains(event.target)) {
+    // if clicked outside, hide the div
+    divToHide.style.display = "none";
+  }
+});
 
 
 
@@ -78,5 +78,12 @@ function view(){
       }
   }, 4000);
 
+
+
+
+
+
+
+  // -----------------------------tab closing-------------------------
 
 
